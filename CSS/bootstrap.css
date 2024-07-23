@@ -1,0 +1,62 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  background-color: #702cf8;
+  align-items: center;
+  width: 100%;
+}
+header a {
+  text-decoration: none;
+}
+nav {
+  height: 64px;
+  padding: 0 24px;
+  position: sticky;
+  display: flex;
+  align-items: center;
+}
+.nav-link-ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav-link {
+  display: flex;
+}
+.logo svg {
+  color: white;
+  margin: 4px 0;
+}
+
+.nav-link a {
+  padding: 8px;
+  color: #ffffffd9;
+}
+.logo a {
+  padding: 0px;
+  margin: 0px 8px 0px 0px;
+}
+nav button {
+  background-color: transparent;
+  border: 1px solid #ffffffd9;
+  padding: 0 8px;
+  height: 38px;
+  width: 280px;
+  border-radius: 6px;
+  color: #ffffffd9;
+  margin-left: 142px;
+  display: flex;
+  align-items: center;
+}
+.DocSearch-Button-Placeholder {
+  font-size: 1rem;
+  padding: 0 12px 0 6px;
+}
+.DocSearch-Button-Container {
+  align-items: center;
+  display: flex;
+}
+.DocSearch-Button-Keys {
+  display: flex;
+}
