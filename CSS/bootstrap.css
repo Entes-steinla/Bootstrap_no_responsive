@@ -1,3 +1,6 @@
+html {
+  scrollbar-color: #7b7b7ba4 #424242;
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #212529;
@@ -118,6 +121,17 @@ nav {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+.DocSearch-Button:hover {
+  border-color: #fff;
+  box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.7);
+  color: #fff;
+}
+.DocSearch-Button:hover .DocSearch-Search-Icon {
+  color: #fff;
+}
+.DocSearch-Button:hover .DocSearch-Button-Placeholder {
+  color: #fff;
+}
 
 .nav-items {
   margin-left: auto;
@@ -140,6 +154,12 @@ nav {
 }
 .nav-items-link a {
   padding: 8px;
+}
+.nav-items-link:hover svg {
+  color: #fff;
+}
+.nav-items-link:hover #v53 {
+  color: #fff;
 }
 .vr {
   display: inline-block;
@@ -194,6 +214,12 @@ nav {
 .dropdown-menu ul {
   display: none;
 }
+.bi-caret-down-fill1 {
+  padding: 0;
+  margin: 0;
+  margin-left: -6px;
+  margin-right: -2px;
+}
 .bi-caret-down-fill2 {
   padding: 0;
   margin: 0;
@@ -214,7 +240,6 @@ nav {
 }
 .Updates {
   width: 100%;
-
   text-decoration: none;
   color: #212529;
   margin: 9px 0px 30px 0px;
@@ -307,6 +332,9 @@ nav {
   display: block;
   align-items: center;
 }
+.read-docs:hover a {
+  background-color: #6528e0;
+}
 .bi-book-half {
   margin: 0px 8px 0px 0px;
   vertical-align: -2px;
@@ -318,6 +346,9 @@ nav {
 .text-decoration-body {
   text-decoration: underline;
   color: #677078;
+}
+.text-decoration-body:hover {
+  color: #545c62;
 }
 
 #carbonads {
@@ -394,13 +425,20 @@ nav {
   line-height: 30px;
   align-items: center;
 }
-.container-body-head a {
+.flex-justifycontent a {
   color: #6ea8fe;
   font-weight: 600;
   align-items: center;
   text-decoration-color: #566f93;
   text-underline-offset: 0.25em;
   position: relative;
+}
+.flex-justifycontent a:hover {
+  color: #8bb9fe;
+  text-decoration-color: #8bb9fe89;
+}
+.bi-arrow-right:hover {
+  color: #8bb9fe;
 }
 .bi-arrow-right {
   color: #6ea8fe;
@@ -409,6 +447,10 @@ nav {
   margin-top: 6px;
 }
 /* section */
+.col-left-right-bottom {
+  padding-bottom: 48px;
+  margin-bottom: 48px;
+}
 .col-left-right {
   display: flex;
   width: 100%;
@@ -448,16 +490,18 @@ nav {
   border: 1px solid #495057;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 .hightlight-col-left .chroma {
   padding: 4px 0px 14px;
-  margin: 13px 30px 0px 0px;
+  margin: 13px 30px 3px 0px;
 }
 .hightlight-col-left .chroma span {
   font-size: 14px;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
 }
-
+/*  */
 .col-right {
   width: 50%;
   margin-top: 48px;
@@ -482,4 +526,180 @@ nav {
 }
 .col-right a {
   color: #6ea8fe;
+}
+.hightlight-col-right {
+  background-color: #1b1f22 !important;
+  padding: 12px 20px !important;
+  margin-bottom: 16px;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid #495057;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.hightlight-col-right .chroma {
+  padding: 4px 0px 14px;
+  margin: 13px 0px 3px 0px;
+  overflow: auto;
+  font-size: 14px;
+  width: 481px;
+  scrollbar-color: #7b7b7ba4 #424242;
+}
+.hightlight-col-right .chroma span {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.hightlight-col-right .chroma .p {
+  color: #abb2bf;
+}
+.hightlight-col-right .chroma .nt {
+  color: #6edff6;
+}
+.hightlight-col-right .chroma .na {
+  color: #ffe69c;
+}
+.hightlight-col-right .chroma .o {
+  color: #abb2bf;
+}
+.hightlight-col-right .chroma .s {
+  color: #79dfc1;
+}
+.hightlight-col-right .chroma .c1 {
+  color: #868e96;
+}
+.hightlight-col-right .chroma .nv {
+  color: #6edff6;
+}
+.hightlight-col-right .chroma .n {
+  color: #6edff6;
+}
+.hightlight-col-right .chroma .s2 {
+  color: #79dfc1;
+}
+.hightlight-col-right .chroma .k {
+  color: #c29ffa;
+}
+.hightlight-col-right .chroma .mh {
+  color: #feb272;
+}
+.col-bottom {
+  text-align: center !important;
+  padding: 0px 24px;
+  margin: 48px 210.552px 0px;
+}
+.col-bottom h4 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.col-bottom p {
+  font-size: 16px;
+  color: #dee2e6;
+  margin-bottom: 18px;
+}
+.three-img {
+  margin-top: 26px;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  position: relative;
+}
+.three-img img {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 12px;
+}
+.three-img a {
+  display: inline-grid;
+  color: #dee2e6bf;
+  text-decoration: none;
+}
+.three-img img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+.Customize {
+  width: 708.94px;
+  margin-bottom: 48px;
+  margin-left: 24px;
+}
+.palette {
+  margin-bottom: 20px;
+  padding: 16px;
+  color: #0d6efd;
+  background-color: #0d6efd1a;
+  border-radius: 15px;
+  display: inline-block;
+}
+.Customize h2 {
+  margin-bottom: 22px;
+  font-size: 48px;
+  color: #fff;
+  font-weight: 600;
+}
+.Customize p {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #dee2e6;
+  line-height: 30px;
+}
+.after-customize p {
+  padding: 0 !important;
+}
+.after-customize .chroma {
+  padding: 4px 0px 14px;
+  margin: 13px 30px 0px 0px;
+}
+.after-customize .hightlight-col-left,
+.hightlight-col-right {
+  padding: 12px 20px;
+  margin: 0px 0px 16px 0px;
+}
+.after-customize .hightlight-col-right pre {
+  line-height: 19.7px;
+}
+.after-customize .hightlight-col-right .chroma {
+  padding: 0;
+  margin-bottom: -25px;
+}
+.hightlight-col-left .chroma .p {
+  color: #abb2bf;
+}
+.hightlight-col-left .chroma .nt {
+  color: #6edff6;
+}
+.hightlight-col-left .chroma .na {
+  color: #ffe69c;
+}
+.hightlight-col-left .chroma .o {
+  color: #abb2bf;
+}
+.hightlight-col-left .chroma .s {
+  color: #79dfc1;
+}
+.hightlight-col-left .chroma .c1 {
+  color: #868e96;
+}
+.hightlight-col-left .chroma .nv {
+  color: #6edff6;
+}
+.hightlight-col-left .chroma .n {
+  color: #6edff6;
+}
+.hightlight-col-left .chroma .s2 {
+  color: #79dfc1;
+}
+.hightlight-col-left .chroma .k {
+  color: #c29ffa;
+}
+.hightlight-col-left .chroma .mh {
+  color: #feb272;
+}
+.col-left-right a:hover {
+  color: #8bb9fe;
 }
