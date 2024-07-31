@@ -630,5 +630,132 @@
         </div>
       </div>
     </section>
+
+    <section class="build">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="40"
+        height="40"
+        fill="currentColor"
+        class="bi bi-braces"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6"
+        />
+      </svg>
+      <h2>Build and extend in real-time with CSS variables</h2>
+      <p>
+        Bootstrap 5 is evolving with each release to better utilize CSS
+        variables for global theme styles, individual components, and even
+        utilities. We provide dozens of variables for colors, font styles, and
+        more at a <code class="root">:root</code> level for use anywhere. On
+        components and utilities, CSS variables are scoped to the relevant class
+        and can easily be modified.
+      </p>
+      <p class="flex-justifycontent">
+        <a href="">Learn more about CSS variables</a
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-arrow-right"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+          />
+        </svg>
+      </p>
+    </section>
+
+    <section class="after-build">
+      <div class="col-left-right">
+        <div
+          class="col-left"
+          style="border: none; padding: 0px 24px; margin: 0"
+        >
+          <h3>Using CSS variables</h3>
+          <p>
+            Use any of our
+            <a class="build-global" href=""
+              >global <code>:root</code> variables</a
+            >
+            to write new styles. CSS variables use the
+            <code class="bulid-var">var(--bs-variableName)</code> syntax and can
+            be inherited by children elements.
+          </p>
+          <div class="hightlight-col-left">
+            <pre class="chroma">
+<code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nc">.component</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-gray-800</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="na">background-color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-gray-100</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="na">border</span><span class="o">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="ni">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-gray-200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="na">border-radius</span><span class="o">:</span> <span class="mf">.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nc">.component-header</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-purple</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-clipboard"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"
+              />
+              <path
+                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="col-right" style="padding: 0px 24px; margin: 0">
+          <h3>Customizing via CSS variables</h3>
+          <p>
+            Override global, component, or utility class variables to customize
+            Bootstrap just how you like. No need to redeclare each rule, just a
+            new variable value.
+          </p>
+          <div class="hightlight-col-right">
+            <pre class="chroma">
+<code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nt">body</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--bs-body-font-family</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-font-monospace</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--bs-body-line-height</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--bs-body-bg</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-gray-100</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nc">.table</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--bs-table-color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-gray-600</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--bs-table-bg</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-gray-100</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--bs-table-border-color</span><span class="o">:</span> <span class="ni">transparent</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code>
+            </pre>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-clipboard"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"
+              />
+              <path
+                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

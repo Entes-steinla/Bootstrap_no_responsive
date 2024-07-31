@@ -106,7 +106,8 @@ button:hover i {
   transition: all 0.2s ease;
   transform: translateY(0px);
   opacity: 1;
-  color: rgb(255, 0, 43);
+  color: rgb(241, 111, 235);
+  text-shadow: 0px 0px 23px rgba(247, 119, 247, 0.69);
 }
 
 button:hover i:nth-child(1) {
@@ -114,30 +115,30 @@ button:hover i:nth-child(1) {
 }
 
 button:hover i:nth-child(2) {
-  transition-delay: calc(0.045s * 3);
+  transition-delay: calc(0.045s * 2);
 }
 
 button:hover i:nth-child(3) {
-  transition-delay: calc(0.045s * 4);
+  transition-delay: calc(0.045s * 3);
 }
 
 button:hover i:nth-child(4) {
-  transition-delay: calc(0.045s * 5);
+  transition-delay: calc(0.045s * 4);
 }
 button:hover i:nth-child(5) {
-  transition-delay: calc(0.045s * 6);
+  transition-delay: calc(0.045s * 5);
 }
 
 button:hover i:nth-child(6) {
-  transition-delay: calc(0.045s * 7);
+  transition-delay: calc(0.045s * 6);
 }
 
 button:hover i:nth-child(7) {
-  transition-delay: calc(0.045s * 8);
+  transition-delay: calc(0.045s * 7);
 }
 
 button:hover i:nth-child(8) {
-  transition-delay: calc(0.045s * 9);
+  transition-delay: calc(0.045s * 8);
 }
 
 button:hover i:nth-child(9) {
@@ -145,17 +146,17 @@ button:hover i:nth-child(9) {
 }
 
 button:hover i:nth-child(10) {
-  transition-delay: calc(0.045s * 10);
+  transition-delay: calc(0.045s * 9);
 }
 button:hover i:nth-child(11) {
-  transition-delay: calc(0.045s * 11);
+  transition-delay: calc(0.045s * 10);
 }
 button:hover i:nth-child(12) {
-  transition-delay: calc(0.045s * 12);
+  transition-delay: calc(0.045s * 11);
 }
 button:hover i:nth-child(13) {
-  transition-delay: calc(0.045s * 13);
+  transition-delay: calc(0.045s * 12);
 }
 button:hover i:nth-child(14) {
-  transition-delay: calc(0.045s * 14);
+  transition-delay: calc(0.045s * 13);
 }
