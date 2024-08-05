@@ -136,6 +136,9 @@ nav {
   position: absolute;
   cursor: pointer;
 }
+.search:focus {
+  background-color: transparent;
+}
 
 .DocSearch-Button:hover .DocSearch-Search-Icon {
   color: #fff;
@@ -232,7 +235,7 @@ nav {
   border: 1px solid #464551;
   border-top-color: #814bef;
   border-radius: 7px;
-  margin-left: -90px;
+  margin-left: -92px;
   padding: 3px;
   box-shadow: rgba(26, 26, 28, 0.2) 0px 7px 29px 0px;
 }
@@ -264,9 +267,46 @@ nav {
 .show-dropdown:focus,
 .show-dropdown:hover #haha {
   display: block;
-  z-index: 100;
+}
+#v53:focus {
+  background-color: transparent;
+}
+.dropdown-menu-button:focus {
+  background-color: transparent;
 }
 /* ----- */
+#dropdown-themes {
+  position: absolute;
+  display: none;
+  background-color: #212529;
+  border: 1px solid #464551;
+  border-top-color: #814bef;
+  border-radius: 7px;
+  margin-left: -78px;
+  margin-top: 2px;
+  padding: 3px;
+  box-shadow: rgba(26, 26, 28, 0.2) 0px 7px 29px 0px;
+}
+#dropdown-themes button {
+  align-items: center;
+  display: flex;
+  padding: 4px 16px;
+  line-height: 1.65;
+}
+#dropdown-themes svg {
+  margin-right: 8px;
+  color: #808488;
+}
+#dropdown-themes span {
+  color: #dee2e6;
+  font-size: 14px;
+}
+.moon-dark button:focus {
+  background-color: transparent;
+}
+.moon-dark:hover #dropdown-themes {
+  display: block;
+}
 
 .bi-caret-down-fill1 {
   padding: 0;
